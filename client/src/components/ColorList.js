@@ -25,7 +25,7 @@ const ColorList = (props) => {
     axiosWithAuth()
     .put(`http://localhost:5000/api/colors/${colorToEdit.id}`, colorToEdit)
     .then (res => {
-      props.updateColors(props.color.map(color => {
+      props.updateColors(props.colors.map(color => {
         if (color.id === colorToEdit.id) {
           return colorToEdit
         } else {
