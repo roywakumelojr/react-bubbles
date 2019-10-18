@@ -31,7 +31,7 @@ const ColorList = (props) => {
         } else {
           return color
         }
-      }))
+      }));
     })
     .catch(err => {
       console.log(err)
